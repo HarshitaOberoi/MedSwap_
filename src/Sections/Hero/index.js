@@ -1,7 +1,7 @@
 // This is HeroSection component, Main top section of website
 
 import styled, { keyframes } from "styled-components";
-
+import { Link } from 'react-router-dom';
 import pinkBlob from "../../assets/blobPink.png";
 import purpleBlob from "../../assets/blob purple.png";
 import whiteBlob from "../../assets/blob white.png";
@@ -197,9 +197,11 @@ const HeroSection = () => {
           <SubText>
           Making healthcare affordable, accessible, and convenient – MedSwap does it all
           </SubText>
-          <CTA>
-            Get in touch &nbsp;
+          <CTA >
+          <Link to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>
+            Login/Sign Up &nbsp;
             <img src={arrow} alt="cta" width="100" height="100" />
+           </Link>
           </CTA>
         </Lb>
 

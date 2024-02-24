@@ -252,7 +252,7 @@ const Header = () => {
           Services
         </a>
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
-          <Button>Log in/Sign up</Button>
+          <Button>Contact us</Button>
         </a>
       </Nav>
       <HamburgerBtn clicked={+click} onClick={() => setClick(!click)}>

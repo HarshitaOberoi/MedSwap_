@@ -7,7 +7,7 @@ import styled from "styled-components";
 const ContactSection = styled.section`
   width: 100vw;
   padding: calc(2.5rem + 2.5vw) 0;
-  background-color: var(--purple);
+  background-color: #E1F0DA;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -78,39 +78,12 @@ const Form = styled.form`
     &[name="name"] {
       margin-right: 2rem;
     }
+    &[name="email"] {
+      margin-right: 2rem;
+    }
+   
   }
-  textarea {
-    padding: 1rem calc(0.5rem + 1vw);
-    margin-bottom: 1rem;
-    background-color: var(--nav2);
-    border: none;
-    border-radius: 4px;
-    color: #00000;
-    margin-bottom: 2rem;
-    &:focus,
-    &:active {
-      background-color: var(--nav);
-    }
-    &::placeholder {
-      color: #00000;
-      opacity: 0.6;
-    }
-  }
-  button {
-    padding: 0.8rem 2rem;
-    background-color: var(--white);
-    border-radius: 20px;
-    font-size: 1.2rem;
-    color: #0a0b10;
-    cursor: pointer;
-    transition: transform 0.3s;
-    &:hover {
-      transform: scale(1.1);
-    }
-    &:active {
-      transform: scale(0.9);
-    }
-  }
+  
 `;
 
 const Row = styled.div`
@@ -121,13 +94,31 @@ const Row = styled.div`
       &[name="name"] {
         margin-right: 0;
       }
+      textarea {
+        padding: 1rem calc(0.5rem + 1vw);
+        margin-bottom: 1rem;
+        background-color: var(--nav2);
+        border: none;
+        border-radius: 4px;
+        color: #00000;
+        margin-bottom: 2rem;
+        &:focus,
+        &:active {
+          background-color: var(--nav);
+        }
+        &::placeholder {
+          color: #00000;
+          opacity: 0.6;
+        }
+      }
+        
     }
   }
 `;
 const Contact = () => {
   return (
     <ContactSection id="contact">
-      <Title>Get in touch</Title>
+      <Title>Get in Touch</Title>
       {/* <Text>Lorem ipsum dolor sit amet, consectetur adipisicing.</Text> */}
       <Icons>
         <a href="https://www.facebook.com/">
@@ -152,6 +143,7 @@ const Contact = () => {
             type="email"
             placeholder="enter working email id"
           />
+         
         </Row>
         <textarea
           name=""
@@ -164,9 +156,9 @@ const Contact = () => {
           <button
             onClick={(e) => {
               e.preventDefault();
-            }} style={ {border:"3px solid white"}}
+            }} style={ {border:"3px solid white" , padding:"20px" ,borderRadius:'40px', backgroundColor:"transparent"}}
           >
-            Submit
+            Confirm
           </button>
         </div>
       </Form>

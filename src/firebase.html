@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janaushodhi Stores</title>
+</head>
+<body>
+
+<h1>Janaushodhi Stores</h1>
+
+<label for="cityInput">Enter City:</label>
+<input type="text" id="cityInput">
+<button onclick="displayJanaushodhiStores()">Search</button>
+
+<div id="storeList">
+  <!-- Store addresses will be displayed here -->
+</div>
+
+<!-- Firebase JavaScript SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
+<script src="firebase/firebaseConfig.js"></script>
+<script src="firebase/firebaseFunctions.js"></script>
+
+</body>
+</html>
